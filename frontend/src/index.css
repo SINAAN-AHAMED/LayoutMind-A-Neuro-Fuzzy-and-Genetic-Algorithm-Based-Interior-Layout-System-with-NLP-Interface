@@ -1,0 +1,37 @@
+@import 'tailwindcss';
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  background:
+    radial-gradient(1200px 900px at 15% -10%, rgba(140, 120, 255, 0.25), transparent 55%),
+    radial-gradient(1000px 800px at 95% 0%, rgba(40, 190, 255, 0.18), transparent 50%),
+    radial-gradient(1000px 800px at 40% 110%, rgba(255, 110, 200, 0.10), transparent 55%),
+    #070812;
+  color: rgba(255, 255, 255, 0.92);
+}
+
+* {
+  scrollbar-color: rgba(255, 255, 255, 0.14) transparent;
+  scrollbar-width: thin;
+}
+
+.glass {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0.04));
+  border: 1px solid rgba(255, 255, 255, 0.10);
+  box-shadow: 0 10px 50px rgba(0, 0, 0, 0.35);
+  backdrop-filter: blur(14px);
+}
+
+.grid-glow {
+  background-image: radial-gradient(rgba(255, 255, 255, 0.08) 1px, transparent 1px);
+  background-size: 26px 26px;
+  background-position: 0 0;
+  mask-image: radial-gradient(closest-side, rgba(0, 0, 0, 1) 0, transparent 75%);
+}
+
